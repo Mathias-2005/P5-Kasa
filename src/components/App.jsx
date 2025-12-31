@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Test1  from './Test'
-import Test2 from './Test2'
 import Errorpage from './Errorpage'
+import Home from './Home'
+import About from './About'
 
 function App() {
 
@@ -10,8 +10,8 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Test1/>}/>
-        <Route path='/test2' element={<Test2/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/About' element={<About/>}/>
         <Route path='*' element={<Errorpage />} />
         <Route  />
       </Routes>
