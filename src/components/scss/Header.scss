@@ -1,16 +1,11 @@
-body {
-    padding: 100px;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 68px;
+    margin: 100px;
     
-    .navbar__logo {
+    &__logo {
         height: 68px;
         width: auto;
     }
