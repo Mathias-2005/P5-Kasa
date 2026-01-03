@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+
+    &__404 {
+        color: rgba(255, 96, 96, 1);
+        font-weight: 700;
+        font-size: 288px;
+        margin: 0;
+    }
+
+    &__404--p {
+        font-weight: 500;
+        font-size: 36px;
+        color: rgba(255, 96, 96, 1);
+    }
+
+    &__404--p-a {
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+    }
+}
