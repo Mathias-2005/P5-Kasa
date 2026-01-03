@@ -10,7 +10,11 @@ function Cards() {
         <div className="container">
             <div className="container__cards">
                 {datasWorks.map((e) => (
-                        <Link><img src={e.cover} alt="Photo d'hébergements" className="container__cards--card" id={e.id} /></Link>
+                    <Link to={"/Hosting"} key={e.id} className="container__cards--card"><img src={e.cover} alt="Photo d'hébergements" />
+                        <div className="container__cards--card-overlay">
+                            <p className="container__cards--card-title">{e.title}</p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

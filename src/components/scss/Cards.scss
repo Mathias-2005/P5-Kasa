@@ -16,8 +16,34 @@
     }
 
     &__cards--card {
+        display: block;
         width: 340px;
         height: 340px;
         border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        object-fit: cover;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__cards--card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 15px 15px;
+        background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+    }
+
+    &__cards--card-title {
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
