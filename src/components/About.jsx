@@ -1,6 +1,9 @@
+import BannerAbout from './BannerAbout';
+import './scss/BannerAbout.scss'
+
 function About () {
 
-    return <div>TEST 2 PAGE 2</div>
+    return <div><BannerAbout /></div>
 }
 
 export default About;

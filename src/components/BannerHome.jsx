@@ -1,6 +1,6 @@
-import "./scss/Slogan.scss"
+import "./scss/BannerHome.scss"
 
-function Slogan () {
+function BannerHome () {
 
     return <div>
         <div className="background__img">
@@ -9,4 +9,4 @@ function Slogan () {
     </div>
 }
 
-export default Slogan;
+export default BannerHome;

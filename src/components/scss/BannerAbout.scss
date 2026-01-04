@@ -1,0 +1,12 @@
+.background {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background: url("src/assets/images/BackgroundAbout.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #00000040; 
+}

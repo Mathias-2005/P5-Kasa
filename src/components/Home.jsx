@@ -1,10 +1,10 @@
-import Slogan from "./Slogan";
+import BannerHome from "./BannerHome";
 import Cards from "./Cards";
 
 function Home () {
 
     return <div>
-        <Slogan />
+        <BannerHome />
         <Cards />
         </div>
 }
