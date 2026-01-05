@@ -1,9 +1,16 @@
 import BannerAbout from './BannerAbout';
-import './scss/BannerAbout.scss'
+import aboutList from "./data/aboutList.json"
+import Collapse from './Collapse';
 
-function About () {
 
-    return <div><BannerAbout /></div>
+function About() {
+
+    const datasList = aboutList.DataAboutList;
+
+    return <div>
+        <BannerAbout />
+        <Collapse />
+    </div>
 }
 
 export default About;

@@ -1,0 +1,31 @@
+.collapses {
+    margin: 30px 200px 50px 200px;
+    width: 1023px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    &__collapse {
+        height: 54px;
+        background-color: rgba(255, 96, 96, 1);
+        border-radius: 5px;
+    }
+
+    &__collapse--title {
+        margin: 10px 20px 10px 15px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__collapse--title-content {
+        padding: 10px;
+        height: auto;
+        width: 1003px;
+        background-color: rgba(246, 246, 246, 0.45);
+        font-weight: 400px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+    }
+}
