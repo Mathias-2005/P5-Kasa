@@ -1,9 +1,10 @@
 .collapses {
-    margin: 30px 200px 50px 200px;
-    width: 1023px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 35%);
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 30px;
 
     &__collapse {
@@ -19,10 +20,25 @@
         font-size: 24px;
     }
 
-    &__collapse--title-content {
-        padding: 10px;
+    &__collapse--title-arrow {
+        position: absolute;
+        margin-left: 1250px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+    }
+
+    &__collapse--title-arrow-open {
+        transform: rotate(-180deg);
+    }
+
+    &__collapse--open {
+        margin-bottom: 100px;
+    }
+
+    &__collapse--title-arrow-content {
+        padding: 20px;
         height: auto;
-        width: 1003px;
+        width: auto;
         background-color: rgba(246, 246, 246, 0.45);
         font-weight: 400px;
         font-size: 18px;

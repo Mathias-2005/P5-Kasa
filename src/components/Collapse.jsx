@@ -6,17 +6,24 @@ const datasList = aboutList.DataAboutList;
 
 function Collapse() {
 
-    const [openId, setOpenId] = useState(null);
+    const [openIds, setOpenIds] = useState([]);
 
     const toggleCollapse = (id) => {
-        setOpenId(openId === id ? null : id);
-    }
+        if (openIds.includes(id)) {
+            setOpenIds(openIds.filter(openId => openId !== id));
+        } else {
+            setOpenIds([...openIds, id]);
+        }
+    };
 
     return <div className="collapses">
         {datasList.map((e) => (
-            <div key={e.id} className="collapses__collapse">
-                <p onClick={() => toggleCollapse(e.id)} className="collapses__collapse--title">{e.title}</p>
-                {openId === e.id && <p className="collapses__collapse--title-content">{e.content}</p>}
+            <div key={e.id} className={`collapses__collapse ${openIds.includes(e.id) ? 'collapses__collapse--open' : ''}`}>
+                <div className="collapses__collapse--title">
+                    <img onClick={() => toggleCollapse(e.id)} src="./src/assets/images/arrow.png" alt="" className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`} />
+                    <span>{e.title}</span>
+                </div>
+                {openIds.includes(e.id) && <p className="collapses__collapse--title-arrow-content">{e.content}</p>}
             </div>
         ))}
     </div>
