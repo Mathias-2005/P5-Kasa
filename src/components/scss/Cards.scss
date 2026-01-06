@@ -10,10 +10,10 @@
     flex-wrap: wrap;
 
     &__cards {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
-       gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 50px;
     }
 
     &__cards--card {
@@ -38,7 +38,7 @@
         left: 0;
         right: 0;
         padding: 20px 15px 15px;
-        background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent);
     }
 
     &__cards--card-title {
@@ -49,35 +49,36 @@
     }
 }
 
-     @media (max-width: $layout-breakpoint-medium) {
-        .container {
-            margin: 50px;
-            padding: 20px 20px;
-        }
+@media (max-width: $layout-breakpoint-medium) {
+    .container {
+        margin: 50px;
+        padding: 20px 20px;
+    }
 
-        .container__cards {
-            flex-direction: row;
-            justify-content: none;
-            gap: 5px;
+    .container__cards {
+        flex-direction: row;
+        justify-content: none;
+        gap: 5px;
     }
-        .container__cards--card {
-            width: 45%;
-            height: 290px;
-            margin: 15px 0px;
-        }   
-    }
-    
-    @media (max-width: $layout-breakpoint-small) {
-        .container {
-            margin: 20px;
-            padding: 0px;
-            flex-direction: column;
-            background-color: rgba(255, 255, 255, 1);
-        }
 
-        .container__cards--card {
-            width: 100%;
-            height: 255px;
-            margin: 5px 0px;
-        }
+    .container__cards--card {
+        width: 45%;
+        height: 290px;
+        margin: 15px 0px;
     }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+    .container {
+        margin: 20px;
+        padding: 0px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .container__cards--card {
+        width: 100%;
+        height: 255px;
+        margin: 5px 0px;
+    }
+}

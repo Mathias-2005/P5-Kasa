@@ -1,3 +1,5 @@
+@import "./Modules.scss";
+
 .collapses {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -22,7 +24,7 @@
 
     &__collapse--title-arrow {
         position: absolute;
-        margin-left: 1250px;
+        margin-left: calc(60% + 50px);
         transition: transform 0.2s ease;
         cursor: pointer;
     }
@@ -43,5 +45,52 @@
         font-weight: 400px;
         font-size: 18px;
         color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+    .collapses {
+        margin: 50px 90px 50px 90px;
+        width: auto;
+    }
+
+    .collapses__collapse--open {
+        margin-bottom: 180px;
+    }
+
+    .collapses__collapse--title-arrow {
+        margin-left: 70%;
+        }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+    .collapses {
+        margin: 20px 20px;
+        gap: 20px;
+        width: auto;
+
+        &__collapse {
+            height: 40px;
+        }
+
+        &__collapse--open {
+            margin-bottom: 160px;
+        }
+
+        &__collapse--title {
+            margin: 10px 10px 5px 15px;
+            font-size: 14px;
+        }
+
+        &__collapse--title-arrow {
+            margin-left: calc(70%);
+            margin-right: 50px;
+        }
+
+        &__collapse--title-arrow-content {
+            padding: 10px;
+            font-size: 12px;
+        }
+
     }
 }

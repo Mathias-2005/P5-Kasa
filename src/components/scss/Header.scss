@@ -6,7 +6,7 @@
     align-items: center;
     height: 68px;
     margin: 50px 100px;
-    
+
     &__logo {
         height: 68px;
         width: auto;
@@ -26,15 +26,15 @@
 }
 
 @media (max-width: $layout-breakpoint-medium) {
-        .navbar {
-            margin: 50px;
-        }
+    .navbar {
+        margin: 50px;
+    }
 }
 
 @media (max-width: $layout-breakpoint-small) {
-        .navbar {
-            margin: 20px;
-    
+    .navbar {
+        margin: 20px;
+
 
         .navbar__logo {
             width: 145px;

@@ -9,11 +9,11 @@
     height: 210px;
     background-color: rgba(0, 0, 0, 1);
 
-   &__content {
-    color: white;
-    font-weight: 500;
-    font-size: 24px;
-   }
+    &__content {
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+    }
 }
 
 @media (max-width: $layout-breakpoint-small) {
