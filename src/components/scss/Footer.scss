@@ -1,3 +1,5 @@
+@import "./Modules.scss";
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -12,4 +14,10 @@
     font-weight: 500;
     font-size: 24px;
    }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+    .footer__content {
+        font-size: 12px;
+    }
 }

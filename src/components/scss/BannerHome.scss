@@ -1,3 +1,5 @@
+@import "./Modules.scss";
+
 .background__img {
     margin: 50px 100px; 
     display: flex;
@@ -17,3 +19,27 @@
         color: white;
     }
 }
+
+ @media (max-width: $layout-breakpoint-medium) {
+        .background__img {
+            margin: 50px;
+            height: 170px;
+
+            &--content {
+            font-size: 32px;
+            }
+        }
+
+    }
+
+@media (max-width: $layout-breakpoint-small) {
+        .background__img {
+            margin: 20px; 
+            height: 111px;
+
+            &--content {
+            padding-left: 15px;
+            font-size: 24px;
+            }
+        }
+    }

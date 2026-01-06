@@ -1,3 +1,5 @@
+@import "./Modules.scss";
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,5 +22,28 @@
 
     &__content:hover {
         text-decoration: underline;
+    }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+        .navbar {
+            margin: 50px;
+        }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+        .navbar {
+            margin: 20px;
+    
+
+        .navbar__logo {
+            width: 145px;
+            height: 45px;
+        }
+
+        .navbar__content {
+            font-size: 12px;
+            margin: 0px 5px;
+        }
     }
 }

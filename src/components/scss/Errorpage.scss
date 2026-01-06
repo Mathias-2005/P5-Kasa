@@ -1,3 +1,5 @@
+@import "./Modules.scss";
+
 .error {
     display: flex;
     flex-direction: column;
@@ -23,3 +25,34 @@
         color: rgba(0, 0, 0, 1);
     }
 }
+
+    @media (max-width: $layout-breakpoint-medium) {
+        .error__404 {
+            font-size: 188px;
+        }
+
+        .error__404--p {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: $layout-breakpoint-small) {
+        .error {
+            margin: 50px 20px;
+        }
+        
+        .error__404 {
+            margin: 50px 0px;
+            font-size: 96px;
+        }
+
+        .error__404--p {
+            margin: 50px 20px 50px 60px;
+            font-size: 18px;
+        }
+
+        .error__404--p-a {
+            margin: 50px 0px;
+            font-size: 14px;
+        }
+    }
