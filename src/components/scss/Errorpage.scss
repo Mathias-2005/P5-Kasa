@@ -7,7 +7,7 @@
     margin: 100px 0px;
 
     &__404 {
-        color: rgba(255, 96, 96, 1);
+        color: $light-red;
         font-weight: 700;
         font-size: 288px;
         margin: 0;
@@ -16,13 +16,13 @@
     &__404--p {
         font-weight: 500;
         font-size: 36px;
-        color: rgba(255, 96, 96, 1);
+        color: $light-red;
     }
 
     &__404--p-a {
         font-weight: 500;
         font-size: 18px;
-        color: rgba(0, 0, 0, 1);
+        color: $light-black;
     }
 }
 

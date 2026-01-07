@@ -11,13 +11,13 @@
 
     &__collapse {
         height: 54px;
-        background-color: rgba(255, 96, 96, 1);
+        background-color: $light-red;
         border-radius: 5px;
     }
 
     &__collapse--title {
         margin: 10px 20px 10px 15px;
-        color: rgba(255, 255, 255, 1);
+        color: $light-white;
         font-weight: 700;
         font-size: 24px;
     }
@@ -41,7 +41,7 @@
         padding: 20px;
         height: auto;
         width: auto;
-        background-color: rgba(246, 246, 246, 0.45);
+        background-color: $light-grey--;
         font-weight: 400px;
         font-size: 18px;
         color: rgba(0, 0, 0, 1);

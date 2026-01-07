@@ -7,10 +7,10 @@
     justify-content: center;
     width: 100%;
     height: 210px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $light-black;
 
     &__content {
-        color: white;
+        color: $light-white;
         font-weight: 500;
         font-size: 24px;
     }
