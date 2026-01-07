@@ -16,7 +16,6 @@
     }
 
     &__collapse--title {
-        transform: translateZ(150px);
         color: $light-white;
         font-weight: 700;
         font-size: 24px;
@@ -24,7 +23,7 @@
 
     &__container--arrows {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin: 10px;
     }
 
@@ -78,8 +77,11 @@
         }
 
         &__collapse--title {
-            margin: 10px 10px 5px 15px;
             font-size: 14px;
+        }
+
+        &__collapse--title-arrow {
+            width: 16px;
         }
 
         &__collapse--title-arrow-content {
