@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './scss/App.scss'
 import ErrorPage from './ErrorPage'
 import Home from './Home'
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='*' element={<ErrorPage />} />
-          <Route path='/Accommodation' element={<Accommodation />} />
+          <Route path='/Accommodation/:id' element={<Accommodation />} />
           <Route />
         </Routes>
         <Footer />
