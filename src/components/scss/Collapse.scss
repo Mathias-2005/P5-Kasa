@@ -16,15 +16,19 @@
     }
 
     &__collapse--title {
-        margin: 10px 20px 10px 15px;
+        transform: translateZ(150px);
         color: $light-white;
         font-weight: 700;
         font-size: 24px;
     }
 
+    &__container--arrows {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+    }
+
     &__collapse--title-arrow {
-        position: absolute;
-        margin-left: calc(60% + 50px);
         transition: transform 0.2s ease;
         cursor: pointer;
     }
@@ -57,10 +61,6 @@
     .collapses__collapse--open {
         margin-bottom: 180px;
     }
-
-    .collapses__collapse--title-arrow {
-        margin-left: 70%;
-        }
 }
 
 @media (max-width: $layout-breakpoint-small) {
@@ -80,10 +80,6 @@
         &__collapse--title {
             margin: 10px 10px 5px 15px;
             font-size: 14px;
-        }
-
-        &__collapse--title-arrow {
-            margin-left: 70%;
         }
 
         &__collapse--title-arrow-content {
