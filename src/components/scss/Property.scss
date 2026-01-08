@@ -1,0 +1,46 @@
+@import './Modules.scss';
+
+.property {
+    margin: 0px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0px;
+        color: $light-red;
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    &__loc {
+        font-weight: 500;
+        font-size: 18px;
+        color: $light-black;
+        margin: 0px;
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: row;
+        width: 167px;
+        height: 64px;
+    }
+
+    &__name {
+        color: $light-red;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}

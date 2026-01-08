@@ -29,10 +29,14 @@ function Carrousel() {
         <div className="carrousel">
             <img src={carrousel.pictures[currentIndex]} alt="Photo d'hébergements" className='carrousel__pictures' />
             <div className='carrousel__arrows'>
-                <svg onClick={PrevPictures} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="carrousel__arrow-left">
+                <svg onClick={PrevPictures} xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="carrousel__arrow-left">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                 </svg>
-                <svg onClick={NextPictures} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="carrousel__arrow-right">
+                <svg onClick={NextPictures} xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="carrousel__arrow-right">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
             </div>

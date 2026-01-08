@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import datas from "./data/datas.json";
 import Carrousel from './Carrousel';
+import Property from './Property';
 
 function Accommodation() {
   const { id } = useParams(); 
@@ -15,6 +16,7 @@ function Accommodation() {
   return (
     <div>
       <Carrousel />
+      <Property />
     </div>
   );
 }
