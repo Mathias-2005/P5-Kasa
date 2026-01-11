@@ -1,6 +1,8 @@
 import './scss/Property.scss'
 import datas from "./data/datas.json";
 import { useParams } from 'react-router-dom';
+import CollapsePropertyDescritpion from './CollapsePropertyDescription';
+
 
 function Property() {
     const { id } = useParams();
@@ -22,6 +24,7 @@ function Property() {
                 <img className='property__img' src={currentProperty.host.picture} alt="images du propriétaire" />
             </div>
         </div>
+        <CollapsePropertyDescritpion />
     </div>
 }
 
