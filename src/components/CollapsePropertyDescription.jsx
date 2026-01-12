@@ -27,7 +27,7 @@ function CollapsePropertyDescritpion() {
                     <span className="collapses-property__collapse--title">Description</span>
                     <img 
                         onClick={toggleCollapse1} 
-                        src="./src/assets/images/arrow.png" 
+                        src="/src/assets/images/arrow.png" 
                         alt="arrow" 
                         className={`collapses-property__collapse--title-arrow ${isDescriptionOpen ? 'collapses-property__collapse--title-arrow-open' : ''}`} 
                     />
@@ -42,7 +42,7 @@ function CollapsePropertyDescritpion() {
                     <span className="collapses-property__collapse--title">Équipements</span>
                     <img 
                         onClick={toggleCollapse2} 
-                        src="./src/assets/images/arrow.png" 
+                        src="/src/assets/images/arrow.png" 
                         alt="arrow" 
                         className={`collapses-property__collapse--title-arrow ${isEquipmentsOpen ? 'collapses-property__collapse--title-arrow-open' : ''}`} 
                     />
