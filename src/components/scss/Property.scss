@@ -88,6 +88,10 @@
         font-size: 14px;
     }
 
+    .property__tags {
+        margin-bottom: 10px;
+    }
+
     .property__tag {
         font-size: 10px;
         padding: 5px;
@@ -95,10 +99,28 @@
 
     .property__name {
         font-size: 12px;
+        margin: 8px 10px 10px 30px;
     }
 
     .property__img {
         width: 32px;
         height: 32px;
+    }
+
+    .property__host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .property__stars {
+        margin: 0;
+    }
+
+    .property__star {
+        height: 18px;
     }
 }

@@ -33,7 +33,7 @@ function CollapsePropertyDescritpion() {
                     />
                 </div>
             </div>
-            {isDescriptionOpen && <p className="collapses-property__collapse--title-arrow-content">{currentProperty.description}</p>}
+            {isDescriptionOpen && <p className="collapses-property__collapse--title-arrow-content-description">{currentProperty.description}</p>}
         </div>
         
         <div className={`collapses-property__collapse ${isEquipmentsOpen ? 'collapses-property__collapse--open' : ''}`}>

@@ -35,7 +35,7 @@
         transform: rotate(-180deg);
     }
 
-    &__collapse--title-arrow-content {
+    &__collapse--title-arrow-content-description {
         padding: 20px;
         height: auto;
         width: auto;
@@ -78,5 +78,21 @@
     .collapses-property__collapse--title {
         font-size: 12px;
         padding: 0px;
+    }
+
+    .collapses-property__collapse--title-arrow {
+        height: 16px;
+        width: 16px;
+    }
+
+    .collapses-property__collapse--title-arrow-content-description {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .collapses-property__collapse--title-arrow-content-equipement {
+        padding: 10px;
+        font-size: 12px;
+        gap: 5px;
     }
 }
