@@ -1,4 +1,4 @@
-import "./scss/BannerAbout.scss"
+import "../scss/BannerAbout.scss"
 
 function BannerAbout () {
 

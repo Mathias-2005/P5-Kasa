@@ -1,4 +1,4 @@
-import "./scss/BannerHome.scss"
+import "../scss/BannerHome.scss"
 
 function BannerHome () {
 

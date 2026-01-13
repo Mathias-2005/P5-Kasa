@@ -1,5 +1,5 @@
-import "./scss/Cards.scss"
-import datas from "./data/datas.json"
+import "../scss/Cards.scss"
+import datas from "../data/datas.json"
 import { Link } from "react-router-dom";
 
 const datasWorks = datas.DatasHebergements;

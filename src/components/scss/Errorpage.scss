@@ -15,13 +15,13 @@
 
     &__404--p {
         font-weight: 500;
-        font-size: 36px;
+        font-size: $font-big;
         color: $light-red;
     }
 
     &__404--p-a {
         font-weight: 500;
-        font-size: 18px;
+        font-size: $font-medium;
         color: $light-black;
     }
 }
@@ -32,7 +32,7 @@
     }
 
     .error__404--p {
-        font-size: 24px;
+        font-size: $font-large;
     }
 }
 
@@ -48,11 +48,11 @@
 
     .error__404--p {
         margin: 50px 20px 50px 60px;
-        font-size: 18px;
+        font-size: $font-medium;
     }
 
     .error__404--p-a {
         margin: 50px 0px;
-        font-size: 14px;
+        font-size: $font-medium--;
     }
 }

@@ -14,7 +14,7 @@
 
     &--content {
         font-weight: 700;
-        font-size: 48px;
+        font-size: $font-biger;
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
         color: $light-white;
     }
@@ -26,7 +26,7 @@
         height: 170px;
 
         &--content {
-            font-size: 32px;
+            font-size: $font-big;
         }
     }
 
@@ -40,7 +40,7 @@
 
         &--content {
             padding: 0px 15px;
-            font-size: 24px;
+            font-size: $font-large;
         }
     }
 }

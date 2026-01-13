@@ -1,5 +1,5 @@
-import "./scss/Collapse.scss"
-import aboutList from "./data/aboutList.json"
+import "../scss/Collapse.scss"
+import aboutList from "../data/aboutList.json"
 import { useState } from "react";
 
 const datasList = aboutList.DataAboutList;

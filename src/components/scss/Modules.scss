@@ -2,9 +2,20 @@
 $layout-breakpoint-medium: 1024px;
 // MEDIA QUERIES SMALL (TABLETTE/PHONE)
 $layout-breakpoint-small: 767.98px;
-// COLORS !
+// COLORS 
 $light-white: rgba(255, 255, 255, 1);
 $light-grey: rgba(246, 246, 246, 1);
 $light-grey--:rgba(246, 246, 246, 0.45);
 $light-black: rgba(0, 0, 0, 1);
 $light-red: rgba(255, 96, 96, 1);
+// FONT SIZE 
+$font-biger: 48px;
+$font-big: 36px;
+$font-big--: 32px;
+$font-large: 24px;
+$font-medium: 18px;
+$font-medium--: 14px;
+$font-small: 12px;
+$font-very-small: 10px;
+// FONT FAMILY 
+$font-Montserrat: 'Montserrat', sans-serif;

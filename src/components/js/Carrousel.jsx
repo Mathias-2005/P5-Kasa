@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import datas from "./data/datas.json";
+import datas from "../data/datas.json";
 import { useParams } from 'react-router-dom';
-import './scss/Carrousel.scss'
+import '../scss/Carrousel.scss'
 
 function Carrousel() {
     const { id } = useParams();

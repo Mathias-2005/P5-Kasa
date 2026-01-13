@@ -18,7 +18,7 @@
     &__collapse--title {
         color: $light-white;
         font-weight: 700;
-        font-size: 24px;
+        font-size: $font-large;
     }
 
     &__container--arrows {
@@ -46,7 +46,7 @@
         width: auto;
         background-color: $light-grey--;
         font-weight: 400px;
-        font-size: 18px;
+        font-size: $font-medium;
         color: $light-black;
     }
 
@@ -57,7 +57,7 @@
         padding: 20px;
         background-color: $light-grey--;
         font-weight: 400px;
-        font-size: 18px;
+        font-size: $font-medium;
         color: $light-black;
     }
 }
@@ -97,7 +97,7 @@
 
         &__collapse--title-arrow-content {
             padding: 10px;
-            font-size: 12px;
+            font-size: $font-small;
         }
 
     }

@@ -1,7 +1,9 @@
+@import './Modules.scss';
+
 body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-Montserrat;
 }
 
 

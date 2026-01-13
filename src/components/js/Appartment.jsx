@@ -1,8 +1,8 @@
-import './scss/Appartment.scss'
-import datas from "./data/datas.json";
+import '../scss/Appartment.scss'
+import datas from "../data/datas.json";
 import { useParams } from 'react-router-dom';
-import CollapseAppartment from './CollapseAppartment';
-import Rate from './Rate';
+import CollapseAppartment from '../js/CollapseAppartment';
+import Rate from '../js/Rate';
 
 function Appartment() {
     const { id } = useParams();

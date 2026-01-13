@@ -12,12 +12,12 @@
     &__content {
         color: $light-white;
         font-weight: 500;
-        font-size: 24px;
+        font-size: $font-large;
     }
 }
 
 @media (max-width: $layout-breakpoint-small) {
     .footer__content {
-        font-size: 12px;
+        font-size: $font-small;
     }
 }

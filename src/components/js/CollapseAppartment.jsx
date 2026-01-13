@@ -1,7 +1,7 @@
-import datas from "./data/datas.json"
+import datas from "../data/datas.json"
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
-import './scss/CollapseAppartment.scss'
+import '../scss/CollapseAppartment.scss'
 
 
 function CollapseAppartment() {

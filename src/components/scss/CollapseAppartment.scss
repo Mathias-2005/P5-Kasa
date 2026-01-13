@@ -16,7 +16,7 @@
     &__collapse--title {
         color: $light-white;
         font-weight: 700;
-        font-size: 18px;
+        font-size: $font-medium;
         padding: 5px;
     }
 
@@ -41,7 +41,7 @@
         width: auto;
         background-color: $light-grey--;
         font-weight: 400px;
-        font-size: 18px;
+        font-size: $font-medium;
         color: $light-black;
     }
 
@@ -52,7 +52,7 @@
         padding: 20px;
         background-color: $light-grey--;
         font-weight: 400px;
-        font-size: 18px;
+        font-size: $font-medium;
         color: $light-black;
     }
 }
@@ -76,7 +76,7 @@
     }
 
     .collapses-appartment__collapse--title {
-        font-size: 12px;
+        font-size: $font-small;
         padding: 0px;
     }
 
@@ -87,12 +87,12 @@
 
     .collapses-appartment__collapse--title-arrow-content-description {
         padding: 10px;
-        font-size: 12px;
+        font-size: $font-small;
     }
 
     .collapses-appartment__collapse--title-arrow-content-equipement {
         padding: 10px;
-        font-size: 12px;
+        font-size: $font-small;
         gap: 5px;
     }
 }

@@ -15,7 +15,7 @@
     &__content {
         margin-left: 57px;
         text-decoration: none;
-        font-size: 24px;
+        font-size: $font-large;
         font-weight: 500;
         color: $light-black;
     }
@@ -42,7 +42,7 @@
         }
 
         .navbar__content {
-            font-size: 12px;
+            font-size: $font-small;
             margin: 0px 5px;
         }
     }

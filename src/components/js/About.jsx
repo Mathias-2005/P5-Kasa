@@ -1,5 +1,5 @@
-import BannerAbout from './BannerAbout';
-import Collapse from './Collapse';
+import BannerAbout from '../js/BannerAbout';
+import Collapse from '../js/Collapse';
 
 
 function About() {

@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom';
-import datas from "./data/datas.json";
-import Carrousel from './Carrousel';
-import Appartment from './Appartment';
+import datas from "../data/datas.json";
+import Carrousel from '../js/Carrousel';
+import Appartment from '../js/Appartment';
+import ErrorPage from '../js/ErrorPage';
 
 function Accommodation() {
   const { id } = useParams();
@@ -10,7 +11,9 @@ function Accommodation() {
 
   // EN CAS D'ERREUR DANS L'URL ID
   if (!accommodation) {
-    return <div>Hébergement non trouvé</div>;
+    return <div>
+      <ErrorPage />
+    </div>;
   }
 
   return (

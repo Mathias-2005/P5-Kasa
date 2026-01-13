@@ -1,5 +1,5 @@
-import BannerHome from "./BannerHome";
-import Cards from "./Cards";
+import BannerHome from "../js/BannerHome";
+import Cards from "../js/Cards";
 
 function Home() {
 
