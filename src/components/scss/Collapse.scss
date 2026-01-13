@@ -49,17 +49,6 @@
         font-size: $font-medium;
         color: $light-black;
     }
-
-    &__collapse--title-arrow-content-equipement {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-        padding: 20px;
-        background-color: $light-grey--;
-        font-weight: 400px;
-        font-size: $font-medium;
-        color: $light-black;
-    }
 }
 
 @media (max-width: $layout-breakpoint-medium) {
