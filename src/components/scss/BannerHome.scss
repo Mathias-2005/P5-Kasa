@@ -13,7 +13,7 @@
     box-shadow: 3px 3px 3px #00000040;
 
     &--content {
-        font-weight: 700;
+        font-weight: $weight-big;
         font-size: $font-biger;
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
         color: $light-white;

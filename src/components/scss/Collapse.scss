@@ -17,7 +17,7 @@
 
     &__collapse--title {
         color: $light-white;
-        font-weight: 700;
+        font-weight: $weight-big;
         font-size: $font-large;
     }
 
@@ -45,7 +45,7 @@
         height: auto;
         width: auto;
         background-color: $light-grey--;
-        font-weight: 400px;
+        font-weight: $weight-small;
         font-size: $font-medium;
         color: $light-black;
     }

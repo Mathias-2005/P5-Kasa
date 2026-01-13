@@ -13,12 +13,12 @@
     &__title {
         margin: 0px;
         color: $light-red;
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: $font-big;
     }
 
     &__loc {
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: $font-medium;
         color: $light-black;
         margin: 0px;
@@ -35,7 +35,7 @@
         background-color: $light-red;
         border-radius: 10px;
         color: $light-white;
-        font-weight: 700;
+        font-weight: $weight-big;
         font-size: $font-medium--;
     }
 
@@ -52,7 +52,7 @@
 
     &__name {
         color: $light-red;
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: $font-medium;
         margin: 10px 10px 10px 30px;
     }

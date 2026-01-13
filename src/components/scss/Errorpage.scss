@@ -8,19 +8,19 @@
 
     &__404 {
         color: $light-red;
-        font-weight: 700;
+        font-weight: $weight-big;
         font-size: 288px;
         margin: 0;
     }
 
     &__404--p {
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: $font-big;
         color: $light-red;
     }
 
     &__404--p-a {
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: $font-medium;
         color: $light-black;
     }
