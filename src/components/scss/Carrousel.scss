@@ -29,6 +29,10 @@
         cursor: pointer;
     }
 
+    &__arrow-none {
+        display: none;
+    }
+
     &__slideshow {
         margin-top: 110px;
         margin-left: calc(50%);

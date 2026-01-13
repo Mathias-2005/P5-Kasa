@@ -1,12 +1,12 @@
 import BannerHome from "./BannerHome";
 import Cards from "./Cards";
 
-function Home () {
+function Home() {
 
     return <div>
         <BannerHome />
         <Cards />
-        </div>
-}
+    </div>
+};
 
 export default Home;

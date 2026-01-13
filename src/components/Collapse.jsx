@@ -22,13 +22,16 @@ function Collapse() {
                 <div>
                     <div className="collapses__container--arrows">
                         <span className="collapses__collapse--title">{e.title}</span>
-                        <img onClick={() => toggleCollapse(e.id)} src="./src/assets/images/arrow.png" alt="arrow" className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`} />
+                        <img onClick={() => toggleCollapse(e.id)}
+                            src="./src/assets/images/arrow.png"
+                            alt="arrow"
+                            className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`} />
                     </div>
                 </div>
                 {openIds.includes(e.id) && <p className="collapses__collapse--title-arrow-content">{e.content}</p>}
             </div>
         ))}
     </div>
-}
+};
 
 export default Collapse;

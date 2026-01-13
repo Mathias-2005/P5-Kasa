@@ -1,6 +1,6 @@
 @import './Modules.scss';
 
-.collapses-property {
+.collapses-appartment {
     margin: 50px 100px 50px 100px;
     display: flex;
     align-items: center;
@@ -58,39 +58,39 @@
 }
 
 @media (max-width:$layout-breakpoint-medium) {
-    .collapses-property {
+    .collapses-appartment {
         margin: 50px;
         gap: 40px;
     }
 }
 
 @media (max-width:$layout-breakpoint-small) {
-    .collapses-property {
+    .collapses-appartment {
         margin: 0px 20px 20px 20px;
         flex-direction: column;
         gap: 20px;
     }
 
-    .collapses-property__collapse {
+    .collapses-appartment__collapse {
         height: 30px;
     }
 
-    .collapses-property__collapse--title {
+    .collapses-appartment__collapse--title {
         font-size: 12px;
         padding: 0px;
     }
 
-    .collapses-property__collapse--title-arrow {
+    .collapses-appartment__collapse--title-arrow {
         height: 16px;
         width: 16px;
     }
 
-    .collapses-property__collapse--title-arrow-content-description {
+    .collapses-appartment__collapse--title-arrow-content-description {
         padding: 10px;
         font-size: 12px;
     }
 
-    .collapses-property__collapse--title-arrow-content-equipement {
+    .collapses-appartment__collapse--title-arrow-content-equipement {
         padding: 10px;
         font-size: 12px;
         gap: 5px;

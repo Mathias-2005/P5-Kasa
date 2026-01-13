@@ -1,6 +1,6 @@
 @import './Modules.scss';
 
-.property {
+.appartment {
     margin: 0px 100px 50px 100px;
     display: flex;
     justify-content: space-between;
@@ -69,45 +69,45 @@
 }
 
 @media (max-width:$layout-breakpoint-medium) {
-    .property {
+    .appartment {
         margin: 50px;
     }
 }
 
 @media (max-width:$layout-breakpoint-small) {
-    .property {
+    .appartment {
         margin: 20px 20px 0px 20px;
         flex-direction: column;
     }
 
-    .property__title {
+    .appartment__title {
         font-size: 18px;
     }
 
-    .property__loc {
+    .appartment__loc {
         font-size: 14px;
     }
 
-    .property__tags {
+    .appartment__tags {
         margin-bottom: 10px;
     }
 
-    .property__tag {
+    .appartment__tag {
         font-size: 10px;
         padding: 5px;
     }
 
-    .property__name {
+    .appartment__name {
         font-size: 12px;
         margin: 8px 10px 10px 30px;
     }
 
-    .property__img {
+    .appartment__img {
         width: 32px;
         height: 32px;
     }
 
-    .property__host {
+    .appartment__host {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
@@ -116,11 +116,11 @@
         margin-bottom: 10px;
     }
 
-    .property__stars {
+    .appartment__stars {
         margin: 0;
     }
 
-    .property__star {
+    .appartment__star {
         height: 18px;
     }
 }
