@@ -2,7 +2,7 @@
 
 .container {
     height: auto;
-    margin: 50px 100px 50px 100px;
+    @include margin-desktop;
     padding: 50px;
     border-radius: 25px;
     background-color: $light-grey;
@@ -51,7 +51,7 @@
 
 @media (max-width: $layout-breakpoint-medium) {
     .container {
-        margin: 50px;
+        @include margin-tablet;
         padding: 20px 20px;
     }
 
@@ -70,7 +70,7 @@
 
 @media (max-width: $layout-breakpoint-small) {
     .container {
-        margin: 20px;
+        @include margin-phone;
         padding: 0px;
         flex-direction: column;
         background-color: $light-white;

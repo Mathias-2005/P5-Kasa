@@ -1,7 +1,7 @@
 @import './Modules.scss';
 
 .collapses-appartment {
-    margin: 50px 100px 50px 100px;
+    @include margin-desktop;
     display: flex;
     gap: 75px;
 
@@ -62,7 +62,7 @@
 
 @media (max-width:$layout-breakpoint-medium) {
     .collapses-appartment {
-        margin: 50px;
+        @include margin-tablet;
         gap: 40px;
     }
 
@@ -73,7 +73,7 @@
 
 @media (max-width:$layout-breakpoint-small) {
     .collapses-appartment {
-        margin: 0px 20px 20px 20px;
+        @include margin-phone;
         flex-direction: column;
         gap: 20px;
     }

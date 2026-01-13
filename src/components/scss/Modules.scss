@@ -19,3 +19,13 @@ $font-small: 12px;
 $font-very-small: 10px;
 // FONT FAMILY 
 $font-Montserrat: 'Montserrat', sans-serif;
+// MIXIN
+@mixin margin-desktop {
+    margin: 50px 100px;
+}
+@mixin margin-tablet {
+    margin: 50px;
+}
+@mixin margin-phone {
+    margin: 20px;
+}

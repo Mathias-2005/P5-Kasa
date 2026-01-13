@@ -1,7 +1,7 @@
 @import "./Modules.scss";
 
 .background {
-    margin: 50px 100px 20px 100px;
+    @include margin-desktop;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 
 @media (max-width: $layout-breakpoint-small) {
     .background {
-        margin: 20px 20px 20px 20px;
+        @include margin-phone;
         height: 111px;
         border-radius: 10px;
     }

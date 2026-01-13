@@ -1,7 +1,7 @@
 @import './Modules.scss';
 
 .appartment {
-    margin: 0px 100px 50px 100px;
+    @include margin-desktop;
     display: flex;
     justify-content: space-between;
 
@@ -70,13 +70,13 @@
 
 @media (max-width:$layout-breakpoint-medium) {
     .appartment {
-        margin: 50px;
+        @include margin-tablet;
     }
 }
 
 @media (max-width:$layout-breakpoint-small) {
     .appartment {
-        margin: 20px 20px 0px 20px;
+        @include margin-phone;
         flex-direction: column;
     }
 

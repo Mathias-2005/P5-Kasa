@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 68px;
-    margin: 50px 100px;
+    @include margin-desktop;
 
     &__logo {
         height: 68px;
@@ -27,13 +27,13 @@
 
 @media (max-width: $layout-breakpoint-medium) {
     .navbar {
-        margin: 50px;
+        @include margin-tablet;
     }
 }
 
 @media (max-width: $layout-breakpoint-small) {
     .navbar {
-        margin: 20px;
+        @include margin-phone;
 
 
         .navbar__logo {

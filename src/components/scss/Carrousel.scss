@@ -1,7 +1,7 @@
 @import './Modules.scss';
 
 .carrousel {
-    margin: 50px 100px;
+    @include margin-desktop;
     height: 415px;
 
     &__pictures {
@@ -45,7 +45,7 @@
 
 @media (max-width: $layout-breakpoint-medium) {
     .carrousel {
-        margin: 50px;
+        @include margin-tablet;
         height: 320px;
     }
 
@@ -72,7 +72,7 @@
 
 @media (max-width: $layout-breakpoint-small) {
     .carrousel {
-        margin: 20px;
+        @include margin-phone;
         height: 255px;
     }
 
