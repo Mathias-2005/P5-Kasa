@@ -20,7 +20,7 @@ function CollapseAppartment() {
   return (
     <div className="collapses-appartment">
       <div className={`collapses-appartment__collapse ${isDescriptionOpen ? 'collapses-appartment__collapse--open' : ''}`}>
-        <div>
+        <div className="collapses-appartment__header">
           <div className="collapses-appartment__container--arrows">
             <span className="collapses-appartment__collapse--title">Description</span>
             <img
@@ -39,7 +39,7 @@ function CollapseAppartment() {
       </div>
 
       <div className={`collapses-appartment__collapse ${isEquipmentsOpen ? 'collapses-appartment__collapse--open' : ''}`}>
-        <div>
+        <div className="collapses-appartment__header">
           <div className="collapses-appartment__container--arrows">
             <span className="collapses-appartment__collapse--title">Équipements</span>
             <img

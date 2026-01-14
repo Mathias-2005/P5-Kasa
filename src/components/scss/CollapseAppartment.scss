@@ -7,7 +7,10 @@
 
     &__collapse {
         width: 100%;
-        height: 54px;
+    }
+
+    &__header {
+        overflow: hidden;
         background-color: $light-red;
         border-radius: 10px;
     }
@@ -17,10 +20,6 @@
         font-weight: $weight-big;
         font-size: $font-medium;
         padding: 5px;
-    }
-
-    &__collapse--open {
-        margin-bottom: 30%;
     }
 
     &__container--arrows {
@@ -39,9 +38,8 @@
     }
 
     &__collapse--title-arrow-content-description {
+        margin: 0;
         padding: 20px;
-        height: auto;
-        width: auto;
         background-color: $light-grey--;
         font-weight: $weight-small;
         font-size: $font-medium;
@@ -65,10 +63,6 @@
         @include margin-tablet;
         gap: 40px;
     }
-
-    .collapses-appartment__collapse--open {
-        margin-bottom: 50%;
-    }
 }
 
 @media (max-width:$layout-breakpoint-small) {
@@ -76,14 +70,6 @@
         @include margin-phone;
         flex-direction: column;
         gap: 20px;
-    }
-
-    .collapses-appartment__collapse {
-        height: 30px;
-    }
-
-    .collapses-appartment__collapse--open {
-        margin-bottom: 50%;
     }
 
     .collapses-appartment__container--arrows {
