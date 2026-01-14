@@ -18,18 +18,18 @@ function Collapse() {
   return (
     <div className="collapses">
       {datasList.map((e) => (
-        <div 
-          key={e.id} 
-          className={`collapses__collapse ${openIds.includes(e.id) ? 'collapses__collapse--open' : ''}`}
+        <div
+          key={e.id}
+          className={`collapses__collapse ${openIds.includes(e.id) ? "collapses__collapse-open" : ""}`}
         >
-          <div>
+          <div className="collapses__header">
             <div className="collapses__container--arrows">
               <span className="collapses__collapse--title">{e.title}</span>
-              <img 
+              <img
                 onClick={() => toggleCollapse(e.id)}
                 src="/src/assets/images/arrow.png"
                 alt="arrow"
-                className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`} 
+                className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`}
               />
             </div>
           </div>

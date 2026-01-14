@@ -9,8 +9,8 @@
     flex-direction: column;
     gap: 30px;
 
-    &__collapse {
-        height: 54px;
+    &__header {
+        overflow: hidden;
         background-color: $light-red;
         border-radius: 5px;
     }
@@ -24,7 +24,8 @@
     &__container--arrows {
         display: flex;
         justify-content: space-between;
-        margin: 10px;
+        background-color: $light-red;
+        padding: 10px;
     }
 
     &__collapse--title-arrow {
@@ -36,18 +37,13 @@
         transform: rotate(-180deg);
     }
 
-    &__collapse--open {
-        margin-bottom: 140px;
-    }
-
     &__collapse--title-arrow-content {
         padding: 20px;
-        height: auto;
-        width: auto;
         background-color: $light-grey--;
         font-weight: $weight-small;
         font-size: $font-medium;
         color: $light-black;
+        margin: 0;
     }
 }
 
@@ -56,10 +52,6 @@
         margin: 50px 90px 50px 90px;
         width: auto;
     }
-
-    .collapses__collapse--open {
-        margin-bottom: 180px;
-    }
 }
 
 @media (max-width: $layout-breakpoint-small) {
@@ -67,14 +59,6 @@
         @include margin-phone;
         gap: 20px;
         width: auto;
-
-        &__collapse {
-            height: 40px;
-        }
-
-        &__collapse--open {
-            margin-bottom: 130px;
-        }
 
         &__collapse--title {
             font-size: 14px;
