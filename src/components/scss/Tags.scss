@@ -1,0 +1,28 @@
+@import './Modules.scss';
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0px;
+
+    &__tag {
+        padding: 5px 20px;
+        background-color: $light-red;
+        border-radius: 10px;
+        color: $light-white;
+        font-weight: $weight-big;
+        font-size: $font-medium--;
+    }
+}
+
+@media (max-width:$layout-breakpoint-small) {
+    .tags {
+        margin-bottom: 10px;
+
+        &__tag {
+            font-size: $font-very-small;
+            padding: 5px;
+        }
+    }
+}

@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom'
 import '../scss/CollapseAppartment.scss'
 
 function CollapseAppartment() {
-  const { id } = useParams()
-  const currentAppartment = datas.DatasHebergements.find(item => item.id == id);
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-  const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
+  const { id } = useParams(); // PARAMETRE QUI REVOIE VERS L'URL APPARTMENT SUIVANT L'ID 
+  const currentAppartment = datas.DatasHebergements.find(item => item.id == id); // CONTIENT l'ID CORRECTE SUIVANT L'URL 
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false); // USE STATE EN BOLLEAN DE BASE EN FALSE
+  const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false); // USE STATE EN BOLLEAN DE BASE EN FALSE
 
   const toggleCollapse1 = () => {
-    setIsDescriptionOpen(!isDescriptionOpen);
+    setIsDescriptionOpen(!isDescriptionOpen); // AU CLICK OUVRER (TRUE) / AU CLICK SI (TRUE) FERMER DONC (FALSE)
   };
 
   const toggleCollapse2 = () => {
-    setIsEquipmentsOpen(!isEquipmentsOpen);
+    setIsEquipmentsOpen(!isEquipmentsOpen); // AU CLICK OUVRER (TRUE) / AU CLICK SI (TRUE) FERMER DONC (FALSE)
   };
 
   return (
@@ -31,6 +31,7 @@ function CollapseAppartment() {
             />
           </div>
         </div>
+        {/* SI TRUE AFFICHER LE CONTENT DESCRIPTION */}
         {isDescriptionOpen && (
           <p className="collapses-appartment__collapse--title-arrow-content-description">
             {currentAppartment.description}
@@ -50,6 +51,7 @@ function CollapseAppartment() {
             />
           </div>
         </div>
+        {/* SI TRUE AFFICHER LE CONTENT EQUIPEMENTS */}
         {isEquipmentsOpen && (
           <div className="collapses-appartment__collapse--title-arrow-content-equipement">
             {currentAppartment.equipments.map((equipment, i) => (

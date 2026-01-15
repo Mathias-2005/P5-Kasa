@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Outlet /> {/* RENVOIE TOUTES LES DIFFRENTES PAGES SELON L'URL */}
       <Footer />
     </>
   )

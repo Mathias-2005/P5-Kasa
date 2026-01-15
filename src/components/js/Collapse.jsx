@@ -2,44 +2,59 @@ import "../scss/Collapse.scss"
 import aboutList from "../../data/aboutList.json"
 import { useState } from "react"
 
-const datasList = aboutList.DataAboutList
+const datasList = aboutList.DataAboutList // VIA UNE VIARIABLE ON VIENS PRENDRE LES DATAS DE NOTRE JSON CORRESPONDANT
 
 function Collapse() {
-  const [openIds, setOpenIds] = useState([]);
+  const [openIds, setOpenIds] = useState([]); // USESTATE SOUS FORME DE TABLEAU QUI PREND LES ID OPENS 
 
+  // RECUPERE LES ID, SI OPEN / CLOSE SI CLOSE / OPEN 
   const toggleCollapse = (id) => {
-    if (openIds.includes(id)) {
-      setOpenIds(openIds.filter(openId => openId !== id))
-    } else {
-      setOpenIds([...openIds, id])
-    }
+    setOpenIds((prevOpenIds) =>
+      prevOpenIds.includes(id)
+        ? prevOpenIds.filter((openId) => openId !== id)
+        : [...prevOpenIds, id]
+    );
   };
 
   return (
     <div className="collapses">
-      {datasList.map((e) => (
-        <div
-          key={e.id}
-          className={`collapses__collapse ${openIds.includes(e.id) ? "collapses__collapse-open" : ""}`}
-        >
-          <div className="collapses__header">
-            <div className="collapses__container--arrows">
-              <span className="collapses__collapse--title">{e.title}</span>
-              <img
+      {datasList.map((e) => {
+        const isOpen = openIds.includes(e.id); // VARIABLE SI OPEN OUI SINON NON
+
+        return (
+          <div
+            key={e.id}
+            className={`collapses__collapse ${
+              isOpen ? "collapses__collapse-open" : ""
+            }`}
+          >
+            <div className="collapses__header">
+              <div
+                className="collapses__container--arrows"
                 onClick={() => toggleCollapse(e.id)}
-                src="/src/assets/images/arrow.png"
-                alt="arrow"
-                className={`collapses__collapse--title-arrow ${openIds.includes(e.id) ? 'collapses__collapse--title-arrow-open' : ''}`}
-              />
+              >
+                <span className="collapses__collapse--title">{e.title}</span>
+
+                <img
+                  src="/src/assets/images/arrow.png"
+                  alt="arrow"
+                  className={`collapses__collapse--title-arrow ${
+                    isOpen ? "collapses__collapse--title-arrow-open" : ""
+                  }`}
+                />
+              </div>
             </div>
+            {/* SI OPEN ON AFFICHE LE CONTENT SUIVANT LE BON ID OPEN */}
+            {isOpen && (
+              <p className="collapses__collapse--title-arrow-content">
+                {e.content}
+              </p>
+            )}
           </div>
-          {openIds.includes(e.id) && (
-            <p className="collapses__collapse--title-arrow-content">{e.content}</p>
-          )}
-        </div>
-      ))}
+        );
+      })}
     </div>
-  )
-};
+  );
+}
 
 export default Collapse;

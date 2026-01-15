@@ -5,9 +5,10 @@ import Appartment from '../components/js/Appartment'
 import ErrorPage from './ErrorPage'
 
 function Accommodation() {
-  const { id } = useParams()
-  const accommodation = datas.DatasHebergements.find(item => item.id === id)
+  const { id } = useParams() // PARAMETRE QUI REVOIE VERS L'URL APPARTMENT SUIVANT L'ID 
+  const accommodation = datas.DatasHebergements.find(item => item.id === id) // CONTIENT l'ID CORRECTE SUIVANT L'URL 
 
+  // SI L'ID DE L'APPARTMENT ET PAS BON ALORS ON AFFICHE LA PAGE D'ERREUR 404
   if (!accommodation) {
     return (
       <div>

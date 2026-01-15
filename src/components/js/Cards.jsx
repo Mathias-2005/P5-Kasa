@@ -2,7 +2,7 @@ import "../scss/Cards.scss"
 import datas from "../../data/datas.json"
 import { Link } from "react-router-dom"
 
-const datasWorks = datas.DatasHebergements
+const datasWorks = datas.DatasHebergements; // VIA UNE VIARIABLE ON VIENS PRENDRE LES DATAS DE NOTRE JSON CORRESPONDANT
 
 function Cards() {
   return (

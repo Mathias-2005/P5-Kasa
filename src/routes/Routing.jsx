@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import ErrorPage from '../src/pages/ErrorPage'
-import About from '../src/pages/About'
-import Accommodation from '../src/pages/Accommodation'
-import App from '../src/layout/App'
-import Home from '../src/pages/Home'
+import ErrorPage from '../pages/ErrorPage'
+import About from '../pages/About'
+import Accommodation from '../pages/Accommodation'
+import App from '../layout/App'
+import Home from '../pages/Home'
 
-// TABLEAU AVEC TOUT LES CHILDREN 
+// TABLEAU AVEC TOUT LES CHILDREN DES ROUTES
 const childrenRoutes = [
   { path: '/', element: <Home /> },
   { path: '/about', element: <About /> },
@@ -19,6 +19,7 @@ function Routing() {
     <div>
       <BrowserRouter>
         <Routes> 
+          {/* APP EST LA ROUTE PARENT */}
           <Route path='/' element={<App />}>
             {childrenRoutes.map((route, index) => (
               <Route 

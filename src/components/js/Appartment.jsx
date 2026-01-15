@@ -3,10 +3,11 @@ import datas from "../../data/datas.json"
 import { useParams } from 'react-router-dom'
 import CollapseAppartment from './CollapseAppartment'
 import Rate from './Rate'
+import Tags from './Tags'
 
 function Appartment() {
-  const { id } = useParams();
-  const currentaApartment = datas.DatasHebergements.find(item => item.id == id);
+  const { id } = useParams(); // PARAMETRE QUI REVOIE VERS L'URL APPARTMENT SUIVANT L'ID 
+  const currentaApartment = datas.DatasHebergements.find(item => item.id == id); // CONTIENT l'ID CORRECTE SUIVANT L'URL 
 
   return (
     <div>
@@ -14,12 +15,7 @@ function Appartment() {
         <div className='appartment__info'>
           <p className='appartment__title'>{currentaApartment.title}</p>
           <p className='appartment__loc'>{currentaApartment.location}</p>
-          <div className='appartment__tags'>
-            {currentaApartment.tags.map((tag, i) => (
-              <span key={i}
-              className='appartment__tag'>{tag}</span>
-            ))}
-          </div>
+            <Tags />
         </div>
         <div className='appartment__host'>
           <div className='appartment__name-img'>
@@ -27,7 +23,8 @@ function Appartment() {
             <img className='appartment__img' src={currentaApartment.host.picture} alt="images du propriétaire" />
           </div>
           <div className='appartment__stars'>
-            <Rate rating={currentaApartment.rating} />
+            {/* RATING = AU RATING DES APPARTEMENTS DES DATAS JSON */}
+            <Rate rating={currentaApartment.rating} /> 
           </div>
         </div>
       </div>

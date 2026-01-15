@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import '../scss/Header.scss'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -11,8 +11,8 @@ function Header() {
           alt="Logo Kasa" />
         </div>
         <div>
-          <Link to="/" className='navbar__content'>Accueil</Link>
-          <Link to="/About" className='navbar__content'>A Propos</Link>
+          <NavLink to="/" className='navbar__content'>Accueil</NavLink>
+          <NavLink to="/About" className='navbar__content'>A Propos</NavLink>
         </div>
       </nav>
     </div>
