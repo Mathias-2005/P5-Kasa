@@ -1,12 +1,14 @@
-![uses-scss_sass](https://github.com/user-attachments/assets/59f1a1a0-9e4c-455e-ad2c-4b79dc10ec5e)![uses-scss_sass](https://github.com/user-attachments/assets/f29faf1c-8371-4d10-a7e0-6b6d2ddd205a)# Créez une application web de location immobilière avec React
+# Créez une application web de location immobilière avec React
 
 ### Kasa entreprise de location d'appartements 
 
 (Projet 5 - Formation en Web Développement - Openclassrooms)
 
-![Uploading uses-scss_sass.svg…]()
+![uses-scss_sass](https://github.com/user-attachments/assets/59f1a1a0-9e4c-455e-ad2c-4b79dc10ec5e)
 ![uses-html](https://github.com/user-attachments/assets/da2fe1e8-50fb-473b-bfc4-d3cc3f52cd8a) 
 ![uses-js](https://github.com/user-attachments/assets/605c5bd5-545a-4e13-ab6c-4af9a65ad096)
+![uses-vite](https://github.com/user-attachments/assets/7870c27f-8e06-4419-a401-12894e234497)
+![uses-react](https://github.com/user-attachments/assets/9cda70d1-4407-4e4a-ae89-e16ffbb34cbd)
 
 ## Scénario 
 
