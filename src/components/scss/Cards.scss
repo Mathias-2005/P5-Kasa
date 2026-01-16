@@ -30,6 +30,11 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    img:hover {
+        transform: scale(1.1);
     }
 
     &__cards--card-overlay {

@@ -1,9 +1,9 @@
 import '../scss/Appartment.scss'
 import datas from "../../data/datas.json"
 import { useParams } from 'react-router-dom'
-import CollapseAppartment from './CollapseAppartment'
 import Rate from './Rate'
 import Tags from './Tags'
+import Collapse from './Collapse'
 
 function Appartment() {
   const { id } = useParams(); // PARAMETRE QUI REVOIE VERS L'URL APPARTMENT SUIVANT L'ID 
@@ -28,7 +28,7 @@ function Appartment() {
           </div>
         </div>
       </div>
-      <CollapseAppartment />
+      <Collapse type="apartment" />
     </div>
   )
 };

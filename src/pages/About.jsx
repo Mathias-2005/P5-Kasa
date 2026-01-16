@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <BannerAbout />
-      <Collapse />
+      <Collapse type="about"/>
     </div>
   )
 }

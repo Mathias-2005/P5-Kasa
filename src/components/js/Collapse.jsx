@@ -1,54 +1,109 @@
-import "../scss/Collapse.scss"
-import aboutList from "../../data/aboutList.json"
-import { useState } from "react"
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import aboutList from "../../data/aboutList.json";
+import datas from "../../data/datas.json";
+import "../scss/Collapse.scss";
 
-const datasList = aboutList.DataAboutList // VIA UNE VIARIABLE ON VIENS PRENDRE LES DATAS DE NOTRE JSON CORRESPONDANT
+function Collapse({ type = "about" }) {
+  const { id } = useParams();
+  const [openIds, setOpenIds] = useState([]);
 
-function Collapse() {
-  const [openIds, setOpenIds] = useState([]); // USESTATE SOUS FORME DE TABLEAU QUI PREND LES ID OPENS 
-
-  // RECUPERE LES ID, SI OPEN / CLOSE SI CLOSE / OPEN 
-  const toggleCollapse = (id) => {
+  // // RECUPERE LES ID, SI OPEN / CLOSE SI CLOSE / OPEN  (page About)
+  const toggleCollapse = (collapseId) => {
     setOpenIds((prevOpenIds) =>
-      prevOpenIds.includes(id)
-        ? prevOpenIds.filter((openId) => openId !== id)
-        : [...prevOpenIds, id]
+      prevOpenIds.includes(collapseId)
+        ? prevOpenIds.filter((openId) => openId !== collapseId)
+        : [...prevOpenIds, collapseId]
     );
   };
 
+  // Données selon le type de page
+  const getCollapseData = () => {
+    if (type === "about") {
+      return aboutList.DataAboutList.map((item) => ({
+        id: item.id,
+        title: item.title,
+        content: item.content,
+        isArray: false,
+      }));
+    }
+
+    if (type === "apartment") {
+      const currentAppartment = datas.DatasHebergements.find(
+        (item) => item.id == id
+      );
+
+      if (!currentAppartment) return [];
+
+      return [
+        {
+          id: "description",
+          title: "Description",
+          content: currentAppartment.description,
+          isArray: false,
+        },
+        {
+          id: "equipments",
+          title: "Équipements",
+          content: currentAppartment.equipments,
+          isArray: true,
+        },
+      ];
+    }
+
+    return [];
+  };
+
+  const collapseData = getCollapseData();
+  const containerClass = type === "apartment" ? "collapses-appartment" : "collapses";
+
   return (
-    <div className="collapses">
-      {datasList.map((e) => {
-        const isOpen = openIds.includes(e.id); // VARIABLE SI OPEN OUI SINON NON
+    <div className={containerClass}>
+      {collapseData.map((item) => {
+        const isOpen = openIds.includes(item.id);
 
         return (
           <div
-            key={e.id}
-            className={`collapses__collapse ${
-              isOpen ? "collapses__collapse-open" : ""
+            key={item.id}
+            className={`${containerClass}__collapse ${
+              isOpen ? `${containerClass}__collapse--open` : ""
             }`}
           >
-            <div className="collapses__header">
+            <div className={`${containerClass}__header`}>
               <div
-                className="collapses__container--arrows"
-                onClick={() => toggleCollapse(e.id)}
+                className={`${containerClass}__container--arrows`}
+                onClick={() => toggleCollapse(item.id)}
               >
-                <span className="collapses__collapse--title">{e.title}</span>
+                <span className={`${containerClass}__collapse--title`}>
+                  {item.title}
+                </span>
 
                 <img
                   src="/src/assets/images/arrow.png"
                   alt="arrow"
-                  className={`collapses__collapse--title-arrow ${
-                    isOpen ? "collapses__collapse--title-arrow-open" : ""
+                  className={`${containerClass}__collapse--title-arrow ${
+                    isOpen ? `${containerClass}__collapse--title-arrow-open` : ""
                   }`}
                 />
               </div>
             </div>
-            {/* SI OPEN ON AFFICHE LE CONTENT SUIVANT LE BON ID OPEN */}
+
             {isOpen && (
-              <p className="collapses__collapse--title-arrow-content">
-                {e.content}
-              </p>
+              <div
+                className={`${containerClass}__collapse--title-arrow-content${
+                  type === "apartment"
+                    ? item.isArray
+                      ? "-equipement"
+                      : "-description"
+                    : ""
+                }`}
+              >
+                {item.isArray ? (
+                  item.content.map((element, i) => <span key={i}>{element}</span>)
+                ) : (
+                  <p>{item.content}</p>
+                )}
+              </div>
             )}
           </div>
         );
