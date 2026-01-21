@@ -8,7 +8,7 @@ function Collapse({ type = "about" }) {
   const { id } = useParams();
   const [openIds, setOpenIds] = useState([]);
 
-  // // RECUPERE LES ID, SI OPEN / CLOSE SI CLOSE / OPEN  (page About)
+  // RECUPERE LES ID, SI OPEN / CLOSE SI CLOSE / OPEN  (page About)
   const toggleCollapse = (collapseId) => {
     setOpenIds((prevOpenIds) =>
       prevOpenIds.includes(collapseId)
@@ -17,7 +17,7 @@ function Collapse({ type = "about" }) {
     );
   };
 
-  // Données selon le type de page
+  // DONNÉES SELON LE TYPE DE LA PAGE
   const getCollapseData = () => {
     if (type === "about") {
       return aboutList.DataAboutList.map((item) => ({
@@ -88,7 +88,11 @@ function Collapse({ type = "about" }) {
               </div>
             </div>
 
-            {isOpen && (
+            <div
+              className={`${containerClass}__collapse--content-wrapper ${
+                isOpen ? `${containerClass}__collapse--content-wrapper--open` : ""
+              }`}
+            >
               <div
                 className={`${containerClass}__collapse--title-arrow-content${
                   type === "apartment"
@@ -104,7 +108,7 @@ function Collapse({ type = "about" }) {
                   <p>{item.content}</p>
                 )}
               </div>
-            )}
+            </div>
           </div>
         );
       })}

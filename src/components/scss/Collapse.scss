@@ -28,15 +28,27 @@
         justify-content: space-between;
         background-color: $light-red;
         padding: 10px;
+        cursor: pointer;
     }
 
     &__collapse--title-arrow {
-        transition: transform 0.2s ease;
-        cursor: pointer;
+        transition: transform 0.3s ease;
     }
 
     &__collapse--title-arrow-open {
         transform: rotate(-180deg);
+    }
+
+    // ANIMATION
+    &__collapse--content-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    &__collapse--content-wrapper--open {
+        max-height: 1000px;
+        transition: max-height 0.6s ease-in-out;
     }
 
     &__collapse--title-arrow-content {
@@ -60,8 +72,7 @@
     .collapses {
         @include margin-phone;
         margin-top: 50px;
-        margin-bottom: 50px;
-        gap: 60px;
+        gap: 20px;
         width: auto;
 
         &__collapse--title {
@@ -76,7 +87,6 @@
             padding: 10px;
             font-size: $font-small;
         }
-
     }
 }
 
@@ -107,15 +117,27 @@
         display: flex;
         justify-content: space-between;
         margin: 10px;
+        cursor: pointer;
     }
 
     &__collapse--title-arrow {
-        transition: transform 0.2s ease;
-        cursor: pointer;
+        transition: transform 0.3s ease;
     }
 
     &__collapse--title-arrow-open {
         transform: rotate(-180deg);
+    }
+
+    // ANIMATION 
+    &__collapse--content-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    &__collapse--content-wrapper--open {
+        max-height: 1000px;
+        transition: max-height 0.6s ease-in-out;
     }
 
     &__collapse--title-arrow-content-description {

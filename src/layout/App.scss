@@ -3,8 +3,17 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family: $font-Montserrat;
+    font-family: $font-Montserrat; 
 }
 
+// AJOUT D'UNE DIV CONTAINER POUR CONTENIR LE MAIN <OUTLET />
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-
+// FLEX: 1 POUR QUE LE CONTENUE MAIN PRENNE TOUTE LA PLACE DISPONIBLE
+.main-content {
+    flex: 1;
+}

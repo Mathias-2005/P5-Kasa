@@ -1,10 +1,10 @@
-import BannerHome from "../components/js/BannerHome"
+import Banner from "../components/js/Banner";
 import Cards from "../components/js/Cards"
 
 function Home() {
   return (
     <div>
-      <BannerHome />
+      <Banner />
       <Cards />
     </div>
   )

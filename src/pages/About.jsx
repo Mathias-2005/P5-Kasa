@@ -1,10 +1,10 @@
-import BannerAbout from '../components/js/BannerAbout'
+import Banner from '../components/js/Banner'
 import Collapse from '../components/js/Collapse'
 
 function About() {
   return (
     <div>
-      <BannerAbout />
+      <Banner type="about" />
       <Collapse type="about"/>
     </div>
   )

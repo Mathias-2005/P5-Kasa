@@ -5,11 +5,13 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Header />
-      <Outlet /> {/* RENVOIE TOUTES LES DIFFRENTES PAGES SELON L'URL */}
+      <main className="main-content">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
