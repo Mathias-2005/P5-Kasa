@@ -29,10 +29,10 @@ Mettre en œuvre des animations CSS
 Développer une interface web avec Sass
 
 ## Evaluation 
-***Evaluation***: Mercredi 21 janvier 2026 -> ???
+***Evaluation***: Mercredi 21 janvier 2026 -> **Projet Validé**
 
 ### Soutenance
-***Remarques***: ???
+***Remarques***: Présentation fluide et structurée. Mathias a fait une démonstration de l'application fonctionnelle dans le navigateur y compris l'aspect responsive, il a ensuite détaillé des fonctionnalités et des composants en expliquant son code. Les réponses aux questions étaient satisfaisantes et il a fait rapidement les ajustements discutés pendant le debriefing. Les compétences évaluées sur ce projet sont acquises, bon travail.
 
 ## Ressources utilisées 
 
