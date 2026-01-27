@@ -79,7 +79,7 @@ function Collapse({ type = "about" }) {
                 </span>
 
                 <img
-                  src="/src/assets/images/arrow.png"
+                  src="/images/arrow.png"
                   alt="arrow"
                   className={`${containerClass}__collapse--title-arrow ${
                     isOpen ? `${containerClass}__collapse--title-arrow-open` : ""
