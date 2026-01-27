@@ -17,7 +17,7 @@ const childrenRoutes = [
 function Routing() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='/P5-Kasa'>
         <Routes> 
           {/* APP EST LA ROUTE PARENT */}
           <Route path='/' element={<App />}>
