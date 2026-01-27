@@ -13,7 +13,7 @@ function Header() {
     <div>
       <nav className='navbar'>
         <div>
-          <img src="/src/assets/images/LOGORED.png"
+          <img src="../../assets/images/LOGORED.png"
             className='navbar__logo'
             alt="Logo Kasa" />
         </div>

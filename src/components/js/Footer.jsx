@@ -4,7 +4,7 @@ function Footer() {
   return (
       <footer className='footer'>
         <div>
-          <img src="/src/assets/images/LOGOWHITE.png" 
+          <img src="../../assets/images/LOGOWHITE.png" 
           alt="Logo Kasa" />
         </div>
         <div className='footer__content'>
