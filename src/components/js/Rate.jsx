@@ -1,5 +1,5 @@
-import inactiveStar from '/src/assets/images/star-inactive.png'
-import activeStar from '/src/assets/images/star-active.png'
+import inactiveStar from '../assets/images/star-inactive.png'
+import activeStar from '../assets/images/star-active.png'
 
 function Rate(props) {
   const rating = props.rating; 
