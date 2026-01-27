@@ -1,5 +1,6 @@
 import '../scss/Header.scss'
 import { NavLink } from 'react-router-dom';
+import logoRed from '../../assets/images/LOGORED.png'
 
 function Header() {
 
@@ -13,7 +14,7 @@ function Header() {
     <div>
       <nav className='navbar'>
         <div>
-          <img src="../../assets/images/LOGORED.png"
+          <img src={logoRed}
             className='navbar__logo'
             alt="Logo Kasa" />
         </div>

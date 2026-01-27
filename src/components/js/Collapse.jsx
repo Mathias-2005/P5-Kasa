@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import aboutList from "../../data/aboutList.json";
 import datas from "../../data/datas.json";
+import arrowIcon from "../../assets/images/arrow.png";
 import "../scss/Collapse.scss";
 
 function Collapse({ type = "about" }) {
@@ -79,7 +80,7 @@ function Collapse({ type = "about" }) {
                 </span>
 
                 <img
-                  src="../../assets/images/arrow.png"
+                  src={arrowIcon}
                   alt="arrow"
                   className={`${containerClass}__collapse--title-arrow ${
                     isOpen ? `${containerClass}__collapse--title-arrow-open` : ""

@@ -1,10 +1,11 @@
 import '../scss/Footer.scss'
+import logoWhite from '../../assets/images/LOGOWHITE.png'
 
 function Footer() {
   return (
       <footer className='footer'>
         <div>
-          <img src="../../assets/images/LOGOWHITE.png" 
+          <img src={logoWhite}
           alt="Logo Kasa" />
         </div>
         <div className='footer__content'>
