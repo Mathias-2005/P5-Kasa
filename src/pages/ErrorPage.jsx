@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../components/scss/ErrorPage.scss"
+import "../components/scss/Errorpage.scss"
 
 function ErrorPage() {
   return (
